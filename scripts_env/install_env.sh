@@ -27,3 +27,4 @@ cd ..
 mv android-sdk/sdk .
 mv android-sdk/qt .
 rm -rf android-sdk
+du -m --max-depth 1 | sort -rn
