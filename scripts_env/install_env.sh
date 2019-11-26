@@ -15,6 +15,8 @@
 
 #!/bin/bash
 
+set -ex
+
 if [ ! -d android-sdk ]; then
 	git clone https://github.com/manang/android-sdk.git
 fi
