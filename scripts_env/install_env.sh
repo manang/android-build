@@ -19,12 +19,11 @@ if [ ! -d android-sdk ]; then
 	git clone https://github.com/manang/android-sdk.git
 fi
 cd android-sdk
-make init_sdk
-#make install-env
-#rm -rf qt/qt-opensource-*
-#rm -rf qt/qtci
+make install-env
+rm -rf qt/qt-opensource-*
+rm -rf qt/qtci
 rm -rf sdk/sdk-tools-*
 cd ..
 mv android-sdk/sdk .
-#mv android-sdk/qt .
+mv android-sdk/qt .
 rm -rf android-sdk
