@@ -23,6 +23,7 @@ fi
 cd android-sdk
 ln -s ../sdk .
 ln -s ../qt .
+ls sdk/
 ./compileDep.sh
 ./compileQtDep.sh
 cd ..
