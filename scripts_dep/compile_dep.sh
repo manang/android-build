@@ -20,10 +20,11 @@ set -ex
 if [ ! -d android-sdk ]; then
 	git clone https://github.com/manang/android-sdk.git
 fi
+ls
 cd android-sdk
 ln -s ../sdk .
 ln -s ../qt .
-ls sdk/
+ls
 ./compileDep.sh
 ./compileQtDep.sh
 cd ..
